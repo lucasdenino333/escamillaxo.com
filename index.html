@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EscamillaXO Personal Training</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">EscamillaXO</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="book.html">Book</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Build. Perform. Grow.</h1>
+      <p>Personal training designed for real results.</p>
+      <a class="cta" href="book.html">Book Now</a>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <h2>About</h2>
+    <p>I'm a certified personal trainer focused on empowering clients with tailored programs, actionable guidance and consistent support to reach new levels of performance.</p>
+  </section>
+
+  <section id="services" class="container">
+    <h2>Coaching Options</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>1:1 Training</h3>
+        <p>Dedicated sessions built around your goals, ability and schedule.</p>
+      </div>
+      <div class="service-card">
+        <h3>Online Coaching</h3>
+        <p>Remote programming and accountability wherever you train from.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> EscamillaXO Personal Training
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
