@@ -3,14 +3,12 @@
 }
 
 body {
-
   margin: 0;
   font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
   color: #fff;
   background: linear-gradient(to bottom, #000, #333);
   line-height: 1.5;
 }
-
 .navbar {
   position: fixed;
   top: 0;
@@ -25,20 +23,17 @@ body {
   z-index: 100;
   color: #111;
 }
-
 .logo {
   font-weight: 700;
   font-size: 1.25rem;
   color: #111;
 }
-
 .navbar a {
   margin-left: 1.5rem;
   text-decoration: none;
   color: #111;
   font-weight: 600;
 }
-
 #hero {
   height: 100vh;
   background: url('https://images.unsplash.com/photo-1558611848-73f7eb4001e4?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
@@ -130,7 +125,6 @@ section {
   align-self: flex-start;
   padding: 0.75rem 2rem;
   background: #111;
-
   font-family: Arial, sans-serif;
   margin: 0;
   line-height: 1.6;
@@ -205,7 +199,6 @@ form button {
   cursor: pointer;
 }
 
-
 footer {
   text-align: center;
   padding: 2rem 1rem;
@@ -213,4 +206,3 @@ footer {
   font-size: 0.9rem;
   color: #111;
 }
-
