@@ -12,13 +12,17 @@
 <body>
   <header class="navbar">
     <div class="logo">EscamillaXO</div>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>EscamillaXO Personal Training</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
-
   <section id="hero">
     <div class="hero-content">
       <h1>Build. Perform. Grow.</h1>
@@ -26,12 +30,10 @@
       <a class="cta" href="#contact">Book Now</a>
     </div>
   </section>
-
   <section id="about" class="container">
     <h2>About</h2>
     <p>I'm a certified personal trainer focused on empowering clients with tailored programs, actionable guidance and consistent support to reach new levels of performance.</p>
   </section>
-
   <section id="services" class="container">
     <h2>Coaching Options</h2>
     <div class="service-grid">
@@ -49,7 +51,6 @@
       </div>
     </div>
   </section>
-
   <section id="contact" class="container">
     <h2>Book a Session</h2>
     <form action="https://formspree.io/f/xdklbblr" method="POST">
@@ -68,11 +69,43 @@
       <button type="submit">Send</button>
     </form>
   </section>
-
   <footer>
     &copy; <span id="year"></span> EscamillaXO Personal Training
+  <main>
+    <section id="hero">
+      <h2>Achieve your fitness goals</h2>
+      <p>Personalized training programs tailored to your needs.</p>
+      <a class="cta" href="#contact">Book a Session</a>
+    </section>
+    <section id="about">
+      <h2>About</h2>
+      <p>Welcome! I'm a certified personal trainer dedicated to helping you reach your fitness goals through customized workouts and continuous support.</p>
+    </section>
+    <section id="services">
+      <h2>Services</h2>
+      <ul>
+        <li>One-on-one training sessions</li>
+        <li>Group fitness classes</li>
+        <li>Online coaching</li>
+        <li>Nutrition guidance</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Book a Session</h2>
+      <form id="contact-form" action="https://formspree.io/f/xdklbblr" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> EscamillaXO Personal Training</p>
   </footer>
-
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
