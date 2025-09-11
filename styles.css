@@ -40,10 +40,7 @@ body {
 
 #hero {
   height: 100vh;
-  background-image: url('https://images.unsplash.com/photo-1558611848-73f7eb4001e4?auto=format&fit=crop&w=1350&q=80');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url('https://images.unsplash.com/photo-1558611848-73f7eb4001e4?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -84,6 +81,7 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
+  border-radius: 4px; /* pulled from main for polish */
 }
 
 section {
@@ -106,6 +104,8 @@ section {
   border: 1px solid #eee;
   padding: 2rem;
   text-align: center;
+  background: #222;
+  color: #fff;
 }
 
 #contact form {
@@ -135,6 +135,7 @@ section {
   color: #fff;
   border: none;
   cursor: pointer;
+  border-radius: 4px; /* polish */
 }
 
 footer {
