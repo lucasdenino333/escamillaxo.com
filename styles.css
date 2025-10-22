@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -15,24 +13,25 @@ img {
   display: block;
 }
 
+/* Navbar */
 .navbar {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0; right: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
   z-index: 100;
 }
 
 .logo {
   font-weight: 700;
   font-size: 1.25rem;
+  color: #111;
 }
 
 .navbar nav a {
@@ -48,10 +47,9 @@ img {
   color: #0070f3;
 }
 
-main {
-  margin-top: 80px;
-}
+main { margin-top: 80px; }
 
+/* Hero */
 #hero {
   min-height: calc(100vh - 80px);
   background: url('https://images.unsplash.com/photo-1558611848-73f7eb4001e4?auto=format&fit=crop&w=1600&q=80')
@@ -69,6 +67,8 @@ main {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero-content {
@@ -82,8 +82,8 @@ main {
 .hero-content h1 {
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   margin-bottom: 1rem;
-  letter-spacing: 1px;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .hero-content p {
@@ -91,6 +91,7 @@ main {
   margin-bottom: 2rem;
 }
 
+/* Buttons */
 .cta {
   display: inline-block;
   padding: 0.85rem 2.5rem;
@@ -108,9 +109,8 @@ main {
   transform: translateY(-2px);
 }
 
-section {
-  padding: 4rem 1.5rem;
-}
+/* Layout */
+section { padding: 4rem 1.5rem; }
 
 .container {
   max-width: 1024px;
@@ -124,11 +124,12 @@ section h2 {
 }
 
 section p {
-  margin: 0 auto;
   max-width: 720px;
+  margin: 0.5rem auto 0;
   text-align: center;
 }
 
+/* Services */
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -146,12 +147,10 @@ section p {
 }
 
 .service-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
+  margin: 0 0 0.75rem 0;
 }
 
 .service-card p {
-  text-align: left;
   margin: 0;
 }
 
@@ -161,6 +160,7 @@ section p {
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
 
+/* Contact */
 #contact form {
   max-width: 640px;
   margin: 0 auto;
@@ -203,13 +203,19 @@ section p {
   transform: translateY(-2px);
 }
 
+/* Extra CTA section */
+.cta-section { text-align: center; }
+.cta-section .cta { margin-top: 2rem; }
+
+/* Footer */
 footer {
-  padding: 2rem 1rem;
   text-align: center;
+  padding: 2rem 1rem;
   background: #f5f5f5;
   font-size: 0.95rem;
 }
 
+/* Responsive */
 @media (max-width: 640px) {
   .navbar {
     flex-direction: column;
@@ -217,15 +223,9 @@ footer {
     padding: 1rem;
   }
 
-  .navbar nav a {
-    margin: 0 0.75rem;
-  }
+  .navbar nav a { margin: 0 0.75rem; }
 
-  main {
-    margin-top: 120px;
-  }
+  main { margin-top: 120px; }
 
-  section p {
-    text-align: left;
-  }
+  section p { text-align: left; }
 }
