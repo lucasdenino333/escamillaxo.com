@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EscamillaXO Personal Training</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +20,17 @@
   <header>
     <h1>EscamillaXO Personal Training</h1>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">EscamillaXO</div>
     <nav>
       <a href="#about">About</a>
       <a href="#services">Services</a>
@@ -88,45 +99,63 @@
       <a class="cta" href="#contact">Book a Session</a>
     </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>Welcome! I'm a certified personal trainer dedicated to helping you reach your fitness goals through customized workouts and continuous support.</p>
-    </section>
+  <section id="about" class="container">
+    <h2>About</h2>
+    <p>
+      I'm a certified personal trainer focused on empowering clients with
+      tailored programs, actionable guidance, and consistent support to reach
+      new levels of performance.
+    </p>
+  </section>
 
-    <section id="services">
-      <h2>Services</h2>
-      <ul>
-        <li>One-on-one training sessions</li>
-        <li>Group fitness classes</li>
-        <li>Online coaching</li>
-        <li>Nutrition guidance</li>
-      </ul>
-    </section>
+  <section id="services" class="container">
+    <h2>Coaching Options</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>1:1 Training</h3>
+        <p>Dedicated sessions built around your goals, ability and schedule.</p>
+      </div>
+      <div class="service-card">
+        <h3>Online Coaching</h3>
+        <p>Remote programming and accountability wherever you train from.</p>
+      </div>
 
-    <section id="contact">
-      <h2>Book a Session</h2>
-      <form id="contact-form" action="https://formspree.io/f/xdklbblr" method="POST">
+      <div class="service-card">
+        <h3>Group Sessions</h3>
+        <p>
+          Motivating small-group workouts that build strength and community.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Book a Session</h2>
+    <form action="https://formspree.io/f/xdklbblr" method="POST">
+      <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" id="email" name="_replyto" required>
-
+        <input type="email" id="email" name="_replyto" required />
+      </div>
+      <div class="form-group">
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
   <footer>
     <p>&copy; <span id="year"></span> EscamillaXO Personal Training</p>
 
+    &copy; <span id="year"></span> EscamillaXO Personal Training
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
