@@ -73,6 +73,7 @@ main {
 
 .hero-content {
   position: relative;
+  z-index: 1;
   color: #fff;
   max-width: 720px;
   padding: 0 1rem;
