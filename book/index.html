@@ -4,42 +4,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Book a Session - EscamillaXO Personal Training</title>
-  <meta http-equiv="refresh" content="0; url=/contact/" />
-  <link rel="canonical" href="/contact/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../styles.css" />
-  <style>
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      margin: 0;
-      background-color: #0d0d0d;
-      color: #ffffff;
-      font-family: 'Montserrat', Arial, sans-serif;
-      text-align: center;
-      padding: 2rem;
-    }
-
-    a {
-      color: #f97316;
-      font-weight: 600;
-    }
-  </style>
-  <script>
-    window.location.replace('/contact/');
-  </script>
 </head>
 <body>
-  <p>
-    Redirecting you to the contact page. If you are not redirected, please
-    <a href="/contact/">click here</a>.
-  </p>
+  <header class="navbar">
+    <div class="logo">EscamillaXO</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/#about">About</a>
+      <a href="/#services">Services</a>
+      <a href="/book/" aria-current="page">Book</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Book a Session</h1>
+      <p>
+        Tell me about your goals, training background, and ideal schedule so we
+        can build the right plan together.
+      </p>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Share Your Details</h2>
+      <form action="https://formspree.io/f/xdklbblr" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> EscamillaXO Personal Training</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
