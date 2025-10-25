@@ -169,14 +169,14 @@ section p {
   gap: 1.25rem;
 }
 
-.form-group label {
+.contact-page .form-group label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
-.form-group input,
-.form-group textarea {
+.contact-page .form-group input,
+.contact-page .form-group textarea {
   width: 100%;
   padding: 0.85rem 1rem;
   border: 1px solid #ccc;
