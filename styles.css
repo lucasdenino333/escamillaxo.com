@@ -3,8 +3,16 @@
 body {
   margin: 0;
   font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
-  color: #111;
-  background: #fff;
+  color: #2f1a16;
+  background: linear-gradient(
+    to bottom,
+    #6c3c31 0%,
+    #905845 26%,
+    #c89273 45%,
+    #e9d4c0 63%,
+    #f1ddca 74%,
+    #f1ddca 100%
+  );
   line-height: 1.6;
 }
 
@@ -44,7 +52,7 @@ img {
 
 .navbar nav a:hover,
 .navbar nav a:focus {
-  color: #0070f3;
+  color: #f1ddca;
 }
 
 main { margin-top: 80px; }
@@ -52,8 +60,6 @@ main { margin-top: 80px; }
 /* Hero */
 #hero {
   min-height: calc(100vh - 80px);
-  background: url('https://images.unsplash.com/photo-1558611848-73f7eb4001e4?auto=format&fit=crop&w=1600&q=80')
-    center / cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -62,19 +68,10 @@ main { margin-top: 80px; }
   padding: 4rem 1rem;
 }
 
-#hero::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  z-index: 0;
-  pointer-events: none;
-}
-
 .hero-content {
   position: relative;
   z-index: 1;
-  color: #fff;
+  color: #f8ede4;
   max-width: 720px;
   padding: 0 1rem;
 }
@@ -96,8 +93,8 @@ main { margin-top: 80px; }
   display: inline-block;
   padding: 0.85rem 2.5rem;
   border-radius: 999px;
-  background: #0070f3;
-  color: #fff;
+  background: #b36f53;
+  color: #f8ede4;
   text-decoration: none;
   font-weight: 600;
   transition: background 0.2s ease, transform 0.2s ease;
@@ -105,7 +102,7 @@ main { margin-top: 80px; }
 
 .cta:hover,
 .cta:focus {
-  background: #0057c2;
+  background: #9f5f46;
   transform: translateY(-2px);
 }
 
@@ -217,8 +214,8 @@ section p {
   padding: 0.85rem 2.5rem;
   border-radius: 999px;
   border: none;
-  background: #111;
-  color: #fff;
+  background: #6c3c31;
+  color: #f8ede4;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s ease, transform 0.2s ease;
@@ -226,7 +223,7 @@ section p {
 
 #contact button:hover,
 #contact button:focus {
-  background: #333;
+  background: #5a3128;
   transform: translateY(-2px);
 }
 
@@ -237,7 +234,7 @@ section p {
 /* Footer */
 footer {
   padding: 2rem 1rem;
-  background: #f5f5f5;
+  background: transparent;
   font-size: 0.95rem;
 }
 
