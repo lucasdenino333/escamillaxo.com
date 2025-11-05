@@ -235,8 +235,8 @@ section p {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #b36f53;
-  box-shadow: 0 0 0 3px rgba(179, 111, 83, 0.25);
+  border-color: #0070f3;
+  box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.15);
 }
 
 #contact button {
