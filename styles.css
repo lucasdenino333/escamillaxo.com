@@ -55,6 +55,7 @@ img {
   width: 44px;
   height: auto;
   display: block;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 640px) {
@@ -69,6 +70,7 @@ img {
 
   .logo-mark {
     width: 32px;
+    transform: translateY(-1px);
   }
 }
 
