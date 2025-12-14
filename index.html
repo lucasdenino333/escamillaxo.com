@@ -4,17 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EscamillaXO Personal Training</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="navbar">
-    <div class="logo">EscamillaXO</div>
+    <div class="logo">
+      <span class="logo-word">Escamilla</span>
+      <img src="assets/IMG_2392.svg" alt="Escamilla emblem" class="logo-mark" />
+    </div>
     <nav>
       <a href="#about">About</a>
       <a href="#services">Services</a>
@@ -26,9 +27,9 @@
   <main>
     <section id="hero">
       <div class="hero-content">
-        <h1>Build. Perform. Grow.</h1>
+        <h1>real coaching. real results. real life.</h1>
         <p>Personal training designed for real results.</p>
-        <a class="cta" href="#contact">Book Now</a>
+        <a class="cta" href="book.html">Book Now</a>
       </div>
     </section>
 
@@ -36,7 +37,7 @@
       <h2>About</h2>
       <p>
         I'm a certified personal trainer focused on empowering clients with
-        tailored programs, actionable guidance and consistent support to reach
+        tailored programs, actionable guidance, and consistent support to reach
         new levels of performance.
       </p>
     </section>
@@ -45,7 +46,7 @@
       <h2>Coaching Options</h2>
       <div class="service-grid">
         <div class="service-card">
-          <h3>1:1 Training</h3>
+          <h3>1 on 1 Training</h3>
           <p>Dedicated sessions built around your goals, ability and schedule.</p>
         </div>
         <div class="service-card">
@@ -55,6 +56,10 @@
         <div class="service-card">
           <h3>Group Sessions</h3>
           <p>Motivating small-group workouts that build strength and community.</p>
+        </div>
+        <div class="service-card">
+          <h3>Nutrition Guidance</h3>
+          <p>Personalized fueling strategies that complement your training plan.</p>
         </div>
       </div>
     </section>
@@ -74,8 +79,17 @@
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5" required></textarea>
         </div>
-        <button type="submit">Send</button>
+        <button id="contact-submit" type="submit">Send</button>
       </form>
+    </section>
+
+    <section class="container cta-section">
+      <h2>Let's Work Together</h2>
+      <p>
+        Ready to start training? Share your goals and schedule on the booking
+        page so we can plan your first session.
+      </p>
+      <a class="cta" href="book.html">Start Your Booking</a>
     </section>
   </main>
 
@@ -84,7 +98,8 @@
   </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
