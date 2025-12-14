@@ -165,6 +165,52 @@ section { padding: 4rem 1.5rem; }
   color: #444;
 }
 
+.about-actions {
+  text-align: center;
+  margin-top: 1.75rem;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.about-card h2,
+.about-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+
+.about-card p {
+  margin: 0;
+  text-align: left;
+}
+
+.about-list,
+.fact-list {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+  color: #3a251f;
+}
+
+.highlight-card {
+  background: linear-gradient(135deg, rgba(0, 112, 243, 0.08), rgba(0, 112, 243, 0));
+}
+
 section h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
@@ -185,9 +231,30 @@ section p {
   margin-top: 2.5rem;
 }
 
+.focus-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.75rem;
+}
+
 @media (min-width: 640px) {
   .service-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .focus-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 960px) {
+  .about-layout {
+    grid-template-columns: 1.6fr 1fr;
+  }
+
+  .focus-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -204,13 +271,31 @@ section p {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.focus-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 1.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
 .service-card h3 {
   margin: 0 0 0.75rem 0;
   font-size: clamp(1.1rem, 3vw, 1.35rem);
   text-align: center;
 }
 
+.focus-card h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: clamp(1.1rem, 3vw, 1.35rem);
+}
+
 .service-card p {
+  margin: 0;
+}
+
+.focus-card p {
   margin: 0;
 }
 
@@ -218,6 +303,28 @@ section p {
 .service-card:focus-within {
   transform: translateY(-6px);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.story-block {
+  margin-top: 2rem;
+}
+
+.story-text {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+.story-text h2 {
+  margin-top: 0;
+  text-align: left;
+}
+
+.story-text p {
+  text-align: left;
+  margin: 0.5rem 0 0;
 }
 
 /* Contact */
@@ -295,4 +402,6 @@ footer {
   main { margin-top: 120px; }
 
   section p { text-align: left; }
+
+  .about-actions { text-align: left; }
 }
