@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - EscamillaXO Personal Training</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-word">Escamilla</span>
+      <img src="../assets/IMG_2392.svg" alt="Escamilla emblem" class="logo-mark" />
+    </div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about/" aria-current="page">About</a>
+      <a href="/#services">Services</a>
+      <a href="/book/">Book</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>About Me</h1>
+    </section>
+
+    <section class="container">
+      <p>This page is currently being updated. Check back soon for more details.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> EscamillaXO Personal Training</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

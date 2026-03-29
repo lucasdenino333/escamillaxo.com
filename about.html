@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - EscamillaXO Personal Training</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-word">Escamilla</span>
+      <img src="assets/IMG_2392.svg" alt="Escamilla emblem" class="logo-mark" />
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="book.html">Book</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>About Me</h1>
+    </section>
+
+    <section class="container about-layout">
+      <div class="about-card">
+        <h2>Coach + Teammate</h2>
+      </div>
+      <div class="about-card highlight-card">
+        <h3>Fast Facts</h3>
+      </div>
+    </section>
+
+    <section class="container story-block">
+      <div class="story-text">
+        <h2>Why I Train</h2>
+      </div>
+    </section>
+
+    <section class="container cta-section">
+      <h2></h2>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> EscamillaXO Personal Training</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

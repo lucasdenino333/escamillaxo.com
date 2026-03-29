@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title">
+  <title id="title">EscamillaXO emblem</title>
+  <defs>
+    <linearGradient id="band" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8c3123" />
+      <stop offset="100%" stop-color="#c24f37" />
+    </linearGradient>
+  </defs>
+  <rect x="18" y="18" width="204" height="204" rx="34" fill="none" stroke="#431b13" stroke-width="12" />
+  <g fill="url(#band)">
+    <polygon points="52,64 196,64 164,96 20,96" />
+    <polygon points="36,120 204,120 172,152 4,152" />
+    <polygon points="20,176 212,176 180,208 8,208" />
+  </g>
+  <path d="M120 56v128" stroke="#431b13" stroke-width="10" stroke-linecap="round" />
+</svg>
